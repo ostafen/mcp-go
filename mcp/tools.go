@@ -527,6 +527,10 @@ func (tis ToolInputSchema) MarshalJSON() ([]byte, error) {
 	m := make(map[string]any)
 	m["type"] = tis.Type
 
+	if tis.Defs != nil {
+		m["$defs"] = tis.Defs
+	}
+
 	// Marshal Properties to '{}' rather than `nil` when its length equals zero
 	if tis.Properties != nil {
 		m["properties"] = tis.Properties
