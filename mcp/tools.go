@@ -516,6 +516,7 @@ func (t Tool) MarshalJSON() ([]byte, error) {
 }
 
 type ToolInputSchema struct {
+	Defs       map[string]any `json:"$defs,omitempty"`
 	Type       string         `json:"type"`
 	Properties map[string]any `json:"properties,omitempty"`
 	Required   []string       `json:"required,omitempty"`
