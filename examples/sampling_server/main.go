@@ -6,8 +6,8 @@ import (
 	"log"
 	"time"
 
-	"github.com/mark3labs/mcp-go/mcp"
-	"github.com/mark3labs/mcp-go/server"
+	"github.com/ostafen/mcp-go/mcp"
+	"github.com/ostafen/mcp-go/server"
 )
 
 func main() {
